@@ -1,0 +1,12 @@
+.header {
+    background: black;
+}
+
+.header__inner {
+    margin: 0 auto;
+}
+
+.header__logo {
+    color: white;
+}
+
