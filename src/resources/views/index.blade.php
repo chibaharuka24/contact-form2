@@ -7,9 +7,11 @@
 
 @section('content')
 <form class="contact-form" action="/contacts/confirm" method="post">
+    @csrf
     <div class="title">
         <h2>お問い合わせ</h2>
     </div>
+    <div class="item">
         <div class="contact-form_name">
             <div class="name">お名前</div>
             <input type="text" name="name" value="テスト太郎">
@@ -26,9 +28,9 @@
             <div class="content">お問い合わせ内容</div>
             <input type="textBox" name="content" value="">
         </div>
-        <div class="contact-form_button">
-            <input type="submit" name="button" value="送信">
-        </div>
-
+    </div>
+    <div class="contact-form_button">
+        <button class="contact-form_button-submit" type="submit">送信</button>
+    </div>
 </form>
 @endsection
