@@ -16,10 +16,10 @@
             <th>お問い合わせ内容</th>
         </tr>
         <tr>
-            <td>{{ $inputs['name']}}</td>
-            <td>{{ $inputs['email']}}</td>
-            <td>{{ $inputs['tel']}}</td>
-            <td>{{ $inputs['content']}}</td>
+            <td>{{ $contact['name']}}</td>
+            <td>{{ $contact['email']}}</td>
+            <td>{{ $contact['tel']}}</td>
+            <td>{{ $contact['content']}}</td>
         </tr>
     </table>
     <button class="contact-form_button-submit" type="submit">送信</button>
