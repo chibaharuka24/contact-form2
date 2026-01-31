@@ -24,9 +24,9 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string',
-            'email' => 'required|email',
-            'tel' => 'required|integer|min:10|max:11',
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'tel' => 'required|digits_between:10,11'
         ];
     }
 
@@ -34,10 +34,13 @@ class ContactRequest extends FormRequest
         return [
             'name.required' => '名前を入力してください',
             'name.string' => '名前を文字列で入力してください',
+            'name.max' => '名前を255文字以下で入力してください',
             'email.required' => 'メールアドレスを入力してください',
             'email.string' => 'メールアドレスを文字列で入力してください',
+            'email.email' => 'メールアドレスをメール形式で入力してください',
+            'email.max' => 'メールアドレスを255文字以下で入力してください',
             'tel.required' => '電話番号を入力してください',
-            'tel.integer' => '電話番号を数値で入力してください'
+            'tel.digits_between' => '電話番号を数値の10~11桁で入力してください'
         ];
     }
 }
