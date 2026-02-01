@@ -8,20 +8,25 @@ table {
     margin: auto;
 }
 table td {
-    border: 1px solid rgb(187, 183, 183);
+    border: 1px solid #E5E5E5;
 }
 
 .title {
     text-align: center;
     font-weight: bold;
-    background-color: rgb(234, 231, 231);
+    background-color: #EEEEEE;
     width: 200px;
     padding: 10px;
 }
 
 .confirm {
     width: 500px;
-    padding: 20px;
+    padding: 10px 20px;
+}
+
+.content {
+    white-space: pre-wrap;
+    align-items: center;
 }
 
 .contact-form_button {

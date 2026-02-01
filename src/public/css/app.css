@@ -3,14 +3,11 @@
 }
 
 .header__inner {
-    margin:  0 auto;
-    padding: 5px 10px;
-    width: 100%;
+    padding: 10px;
 }
 
 .header__logo {
     color: white;
-    font-weight: bold;
     padding-left: 100px;
 }
 

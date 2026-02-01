@@ -6,6 +6,6 @@
 
 @section('content')
 <div class="thank">
-    <h2>お問い合わせありがとうございます</h2>
+    <h3>お問い合わせありがとうございます</h3>
 </div>
 @endsection

@@ -18,6 +18,8 @@ class ContactController extends Controller
     }
 
     public function store(Request $request) {
+        $contact = $request->all();
+        Contact::create($contact);
         return view('thank');
     }
 }
